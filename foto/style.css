@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 .header-left {
     display: flex;
@@ -44,8 +44,6 @@ body{
     justify-content: space-between;
 }
 .header__nav {
-  
-
 }
 .nav__link {
     color: #fff;
@@ -81,8 +79,6 @@ body{
 .but__img {
 }
 .but__txt {
-    
-    
 }
 
 
@@ -95,19 +91,82 @@ body{
     height: 70px;
     z-index: 1;
     position: relative;
-    background-image: url(./foto/rocket-white.svg);
+    background-image: url(./foto/rocket-solid.svg);
     background-size: contain;
     cursor: pointer;
-    display: none;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
 }
 
 
 
+.header-mobile__menu{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: none;
+    z-index: 2;
+    transition:0.6s;
+    -webkit-transition:0.6s;
+    -moz-transition:0.6s;
+    -ms-transition:0.6s;
+    -o-transition:0.6s;
+    -webkit-transition: 0.;
+}
+.mobile__menu-line{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 0, 0, 0.685);
+    top:45% ;
+    transition:0.6s;
+}
+
+.mobile__menu-line::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 0, 0, 0.685);
+    top: -15px;
+    transition:0.6s;
+}
+
+.mobile__menu-line::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 0, 0, 0.685);
+    top: 15px;
+    transition:0.6s;
+    
+}
+.header__input[type="checkbox"]:checked~ .header__label .header-mobile__menu .mobile__menu-line{
+    background-color: aqua;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    top: 45%;
+}
+.header__input[type="checkbox"]:checked~ .header__label .header-mobile__menu .mobile__menu-line::after{
+    background-color: aqua;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    top: 45%;
+}
+.header__input[type="checkbox"]:checked~ .header__label .header-mobile__menu .mobile__menu-line::before{
+    background-color: aqua;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    top: 45%;
+}
 .header__input{
     display: none;
 }
@@ -336,6 +395,7 @@ body{
 .section-1__block-img {
 }
 .section-1__box-txt {
+    align-self: stretch;
     color: #fff;
 
 
@@ -419,7 +479,7 @@ body{
             top: 0;
             display: flex;
             flex-direction: column;
-            height: -100%;
+            height: 100%;
             width: 100%;
             margin: 0;
             transition: 0.6s;
@@ -433,25 +493,12 @@ body{
         }
        
 
-        .header__input[type="checkbox"]:checked~ .header__label .mobile__menu{
-            background-image: url(./foto/earth-americas-solid.svg);
-            filter: drop-shadow(0 0 10px #fff);
-            animation: planet 2s linear infinite;
-            -webkit-filter: drop-shadow(0 0 10px #fff);
-            -webkit-filter: d;
-            -webkit-animation: planet 2s linear infinite;
- }
-
-
-        @keyframes planet{
-            100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); -webkit-transform:; }
-        }
 
         .header{
             flex-direction: row;
             padding: 15px 50px;
         }
-        .mobile__menu{
+        .header-mobile__menu{
             display: block;
 
             
