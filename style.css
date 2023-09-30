@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: var(--Background, #2B2B2B);
+}
+
+/*HEADER*/
+
+.full-screen {
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    max-width: 1180px;
+    height: 60px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 12px;
+}
+.header__logo-txt {
+    font-size: 19px;
+    color: #FFF;
+}
+.header__right {
+    max-width: 607px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nav {
+}
+.nav__link {
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0 20px;
+
+}
+.header__but {
+    width: 152px;
+    height: 60px;
+    padding: 0px 30px;
+    border-radius: 30px;
+    background: #a259ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.but__img {
+}
+.but__txt {
+}
+
+
+
+ 
+
+
+.mobile__menu{
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    position: relative;
+    background-image: url(./rocket-white.svg);
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+
+.header-mobile__menu{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: none;
+    z-index: 2;
+    transition:0.6s;
+    -webkit-transition:0.6s;
+    -moz-transition:0.6s;
+    -ms-transition:0.6s;
+    -o-transition:0.6s;
+    -webkit-transition: 0.;
+}
+
+
+.header__input{
+    display: none;
+}
+
+.header__input[type="checkbox"]:checked~ .header__nav{
+    display: block;
+    top: 20%;
+}
+
+
+
+
+
+
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) { 
+   
+}
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+   @media (max-width: 991px) {
+       .header{
+           flex-direction: column;
+       }
+       .header__right{
+           margin: 20px auto;
+           width: 100%;
+           justify-content: space-around;
+       }
+
+
+    }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+   @media (max-width: 767px) {
+       .header__right{
+           position: absolute;
+           background-color: #a259ff;
+           left: -700px;
+           top: 0;
+           display: flex;
+           flex-direction: column;
+           height: -100%;
+           width: 100%;
+           margin: 0;
+           transition: 0.6s;
+           -webkit-transition: 0.6s;
+           -moz-transition: 0.6s;
+           -ms-transition: 0.6s;
+           -o-transition: 0.6s;
+       }
+       .header__input[type="checkbox"]:checked~ .header__right{
+           left: 0;
+       }
+      
+
+
+
+       .header__input[type="checkbox"]:checked~ .header__label .mobile__menu{
+           background-image: url(./earth-americas-solid\ \(2\).svg);
+           filter: drop-shadow(0 0 10px #fff);
+           animation: planet 2s linear infinite;
+           -webkit-filter: drop-shadow(0 0 10px #fff);
+           -webkit-filter: d;
+           -webkit-animation: planet 2s linear infinite;
+}
+
+
+
+        @keyframes planet{
+            100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); -webkit-transform:; }
+        }
+       .header{
+           flex-direction: row;
+           padding: 15px 50px;
+       }
+       .mobile__menu{
+           display: block;
+
+           
+       }
+    }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+   @media (max-width: 575px) { 
+       .header{
+           padding: 10px;
+       }
+       .header__logo-txt{
+           max-width: 150px;
+       }
+    }
