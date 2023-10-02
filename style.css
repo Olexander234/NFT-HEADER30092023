@@ -356,9 +356,9 @@ body{
 
 
 .section-2 {
-    height: 1085px;
+    height: 1050px;
     padding: 80px 0px;
-    border: 1px solid #c63838;
+    border: 1px solid #911313;
     display: block;
    
 
@@ -421,12 +421,12 @@ body{
     display: flex;
     padding: 0px 0px 30px 30px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     float: left;
     height: 248px;
     width: 240px;
-    margin: 10px;
+    margin: 7px;
 
 
 }
@@ -437,7 +437,7 @@ body{
 
 }
 .section-3 {
-    height: 928px;
+    height: 986px;
     padding: 80px 0px;
     border: 1px solid #c63838;
     display: block;
@@ -461,12 +461,12 @@ body{
     display: flex;
     padding: 0px 0px 30px 30px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     float: left;
     height: 316px;
     width: 240px;
-    margin: 10px;
+    margin: 7px;
 }
 .section-3__img {
 }
