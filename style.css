@@ -139,7 +139,6 @@ body{
 .block__left {
     margin-right: 10px;
     width: 510px;
-    height: 544px;
     padding:  0 0 30px;
     
    
@@ -286,7 +285,6 @@ body{
 .block__right {
     margin: 0 ;
     width: 510px;
-    height: 544px;
 }
 
 .main {
@@ -356,10 +354,10 @@ body{
 
 
 .section-2 {
-    height: 1050px;
     padding: 80px 0px;
     border: 1px solid #911313;
     display: block;
+
    
 
 
@@ -372,6 +370,7 @@ body{
     font-weight: 600;
     line-height: 120%;
     text-transform: capitalize;
+    
 }
 .section-2__info {
     color: var(--White, #fff);
@@ -388,7 +387,6 @@ body{
     height: 60px;
     padding: 0px 50px;
     float: right;
-    margin: -60px 0;
 
     border-radius: 20px;
      border: 2px solid var(--Call-to-Action, #A259FF);
@@ -437,7 +435,6 @@ body{
 
 }
 .section-3 {
-    height: 986px;
     padding: 80px 0px;
     border: 1px solid #c63838;
     display: block;
@@ -476,29 +473,30 @@ body{
 
 
 .section-4 {
-    height: 780px;
     padding: 80px 0px;
     border: 1px solid #c63838;
     display: block;
+    
 
 }
 .section-4__title {
+    width: 560px;
+    height: 350px;
     color: var(--White, #fff);
     font-family: Work Sans;
-    font-size: 38px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%;
     text-transform: capitalize;
 }
 .section-4__info {
     color: var(--White, #fff);
     position: relative;
     font-family: Work Sans;
-    font-size: 22px;
+    font-size: 35px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    font-weight: 600;
+    line-height: 160%; 
     text-transform: capitalize;
 }
 .section-4__button {
@@ -507,7 +505,6 @@ body{
     padding: 0px 50px;
     float: right;
     margin: -60px 0;
-
     border-radius: 20px;
      border: 2px solid var(--Call-to-Action, #A259FF);
      background-color: transparent;
@@ -586,7 +583,48 @@ body{
             justify-content: space-around;
         }
 
- 
+        .block__right{
+            display: none;
+        }
+        .block__left{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .section-1__box{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        .section-1{
+            text-align: center;
+        }
+        
+
+
+
+
+        .section-2__box{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 70px auto;
+            gap: 30px;
+        }
+        .section-4__box{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 70px auto;
+            gap: 30px;
+        }
      }
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
@@ -598,7 +636,6 @@ body{
             top: 0;
             display: flex;
             flex-direction: column;
-            height: -100%;
             width: 100%;
             margin: 0;
             transition: 0.6s;
