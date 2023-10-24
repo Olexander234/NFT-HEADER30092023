@@ -520,7 +520,6 @@ body{
 .section-4__button {
     width: 220px;
     height: 60px;
-   
     float: right;
     margin: -70px 0;
     border-radius: 20px;
@@ -548,14 +547,10 @@ body{
     flex-direction: column;
     align-items: center;
     flex: 1 0 0;
-
     align-items: center;
     justify-content: space-between;
     float: left;
- 
     padding: 60px 0px 5px 5px;
-   
-  
     margin: 5px;
   
     
@@ -571,17 +566,16 @@ body{
 }
 
 .section-5 {
-   height: 640px;
-    margin: 0 auto;
-    margin-top: 60px;
+    
+
     display: block;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-image: url(./foto/50c73503d13e1fe1a0e3277804ef1192.png);
-    border: 1px solid #41aa1e;
-    background-size: cover;
-
-
+    padding: 360px 195px 60px 195px;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+    background-image:linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),url(./foto/50c73503d13e1fe1a0e3277804ef1192.png);
+    
+    height: 640px;
 
 
 
@@ -589,10 +583,15 @@ body{
 }
 
 .section-5__img{
-    display: flex;
-    padding: 10px 20px;
-    align-items: center;
-    gap: 12px;
+display: flex;
+padding: 5px 10px;
+margin: 10px;
+align-items: center;
+gap: 12px;
+border-radius: 20px;
+background: #3B3B3B;
+float: left;
+ 
 }
 
 
@@ -600,53 +599,61 @@ body{
 
 
 .section-5__box {
+    float: left;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+padding: 20px 20px 60px 20px;
 
-    display: block;
-    flex-direction: row;
-    width: 700px;
-
-    justify-content: center;
-    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%);
+    
+    
 }
 .section-5__title {
-    color: #FFF;
-
-
-    /* H2 - Work Sans */
+        color: var(--White, #fff);
     font-family: Work Sans;
-    font-size: 51px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 56.1px */
+    line-height: 120%;
     text-transform: capitalize;
+    justify-content: space-between;
+    
 }
 .section-5__button {
-    display: flex;
-    padding: 22px 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    border-radius: 20px;
-    background: var(--Text, #FFF);
-    color: var(--Background, #2B2B2B);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 22.4px */
+display: flex;
+height: 60px;
+padding: 22px 50px;
+justify-content: center;
+align-items: center;
+
+border-radius: 20px;
+background: var(--Text, #FFF);
+float: left;
 }
 
 
 .section-5__box-card {
+display: flex;
+width: 295px;
+padding: 30px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 20px;
+background: rgba(59, 59, 59, 0.50);
+backdrop-filter: blur(5px);
+
 }
 .section-5__auction {
 }
 .time {
 }
 .timedate{
-    font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    text-align:left;
+    font: Space Mono;
+    text-align: left;
     margin: 0px auto;
     color:#fff;
     border-left: 3px solid rgb(243, 25, 25);
@@ -655,6 +662,27 @@ body{
   }
 
 
+.section-5__box-clock{
+    display: flex;
+    width: 296px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+}
+
+
+
+
+
+.block__hours{
+    display: flex;
+    gap: 10px;
+
+}
 
 
 
@@ -662,21 +690,22 @@ body{
 
 
 
+#h, #m, #s{
+    font-size: 30px;
+}
 
 
 
+#mi{
+    display: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.block__timedate{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
@@ -736,7 +765,7 @@ body{
         }
 
        .section-3__box{
-        display: flex;
+            display: flex;
             align-items: center;
             text-align: center;
             flex-direction: column;
@@ -766,6 +795,26 @@ body{
             margin: 70px auto;
             gap: 30px;
         }
+
+
+
+
+        .section-5__title{
+            align-self: stretch;
+            color: #fff;
+            font-family: Work Sans;
+            font-size: 51px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 160%;
+            text-transform: capitalize;
+        }
+
+
+
+
+
+
 
 
         .section-5__img{

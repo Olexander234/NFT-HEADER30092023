@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTs</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link href="https: //fonts.googleapis.com/css2?family= Work+Sans & display=swap " rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2?family= Work+Sans & display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./foto/Storefront.png">
 </head>
-
-<body>
+<body onLoad="initClock()"></body>
     <div class="full-screen">
 
         <header class="header">
@@ -123,7 +122,7 @@
         <section class="section-2">
             <h2 class="section-2__title">Top creators</h2>
             <p class="section-2__info">Checkout Top Rated Creators on the NFT Marketplace</p>
-            <button class="section-2__button"><img src="./foto/RocketLaunch.png" alt=""> View Rankings</button>
+            <button class="section-2__button"><img src="./foto/RocketLaunch.png" alt="">View Rankings</button>
 
             <div class="section-2__box">
                 <div class="section-2__box-card">
@@ -215,7 +214,6 @@
                 <div class="section-3__box-card">
                     <img src="./foto/Category Card (7).png" alt="" class="section-3__img">
                 </div>
-
             </div>
         </section>
         <section class="section-4">
@@ -239,35 +237,40 @@
 
 
         <section class="section-5">
-            <div class="section-5">
+            
                 <div class="section-5__box">
                     <img class="section-5__img" src="./foto/Artist Card (15).png" alt="">
                     <h2 class="section-5__title">Magic Mashrooms</h2>
+                    <button class="section-5__button"><img src="./foto/Eye.png" alt="">See NFT</button>
                 </div>
-                <button class="section-5__button"><img src="./foto/Eye.png" alt="">See NFT</button>
-
+                
                 <div class="section-5__box-card">
                     <div class="section-5__auction time">
                         <div class="area" id="area"></div>
                         <div class="timedate" id="timedate">
                             <a id="mon">January</a>
                             <a id="d">1</a>,
-                            <a id="y">0</a><br />
-                            <a id="h">12</a> :
-                            <a id="m">00</a>:
-                            <a id="s">00</a>:
+                            <a id="y">0</a><br/>
+                            <div class="block__hours">
+                                <div class="block__timedate">
+                                    <a id="h">12</a>
+                                   <p class="timedate__txt">hours</p>
+                                </div>
+                                <div class="block__timedate">
+                                    <a id="m">00</a>
+                                    <p class="timedate__txt">minutes</p>
+                                </div>
+                                <div class="block__timedate">
+                                    <a id="s">00</a>
+                                    <p class="timedate__txt">seconds</p>
+                                </div>
+                           
                             <a id="mi">000</a>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-
-
+            
         </section>
-
-
     </main>
     <script src="./script.js"></script>
 
@@ -277,5 +280,4 @@
 
 
 </body>
-
 </html>
